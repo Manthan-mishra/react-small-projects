@@ -1,13 +1,13 @@
 import React from "react";
 import classes from "./mealItem.module.css";
 import Card from "../UI/Card";
-import MealItemForm from "";
+import MealItemForm from "./MealItemForm";
 const MealItem = (props) => {
   // const mealName =
   //   console.log(props.data.name);
   return (
     <Card>
-      <li>
+      <li className={classes.meal}>
         <div>
           <h3>{props.data.name}</h3>
           <div className={classes.description}>{props.data.description}</div>
